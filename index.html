@@ -729,6 +729,52 @@ footer{
     </div>
   </section>
 
+  <section class="sec hub-sec" aria-labelledby="hub-h">
+    <style>
+      .sec-head h2.hub-title,#hub-h{font-size:clamp(2.2rem,5.4vw,3.8rem)!important}
+      .hub-title{font-size:clamp(2.1rem,5.2vw,3.6rem);line-height:1.08;letter-spacing:-.02em;margin:0 0 .45rem;font-weight:800;animation:hubRise .9s cubic-bezier(.2,.8,.2,1) both}
+      .hub-title span{display:inline-block;padding-bottom:.08em;
+        background:linear-gradient(100deg,#ffffff 0%,#ffb066 25%,#f97316 45%,#ffffff 65%,#93c5fd 85%,#ffffff 100%);
+        background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+        animation:hubShine 6s linear infinite, hubFloat 4s ease-in-out infinite}
+      .hub-title span:nth-child(2){animation-delay:-.6s,.25s} .hub-title span:nth-child(3){animation-delay:-1.2s,.5s}
+      @keyframes hubShine{to{background-position:-250% 0}}
+      @keyframes hubRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+      @keyframes hubFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+      .hub-sec .row-name{font-size:1.05rem}
+      @media (prefers-reduced-motion:reduce){.hub-title,.hub-title span{animation:none}}
+    </style>
+    <div class="sec-head">
+      <div>
+        <h2 id="hub-h" class="hub-title"><span>Learning&nbsp;Hub</span> <span>and</span> <span>Onboarding</span></h2>
+        <p>Onboarding and learning hub for Monglish staff: the admin panel for the administrative team and the sign-in page new colleagues use.</p>
+      </div>
+      <span class="count">2 links</span>
+    </div>
+    <div class="ledger">
+      <div class="row">
+        <div>
+          <p class="row-name">Administrative panel</p>
+          <p class="row-sub">For the administrative team</p>
+        </div>
+        <p class="row-track">Admin &middot; manage onboarding</p>
+        <div class="row-acts">
+          <a class="mini" href="https://cs0028monglish-cmd.github.io/onboarding-and-learning-hub/?v=20261008b#/admin" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg> Open admin panel</a>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <p class="row-name">Colleague sign-in</p>
+          <p class="row-sub">The link new staff will use</p>
+        </div>
+        <p class="row-track">New staff &middot; sign in</p>
+        <div class="row-acts">
+          <a class="mini" href="https://cs0028monglish-cmd.github.io/onboarding-and-learning-hub/#/signin" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg> Open sign-in</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <p>Built from the Edulixa 360 app directory and the project links register.</p>
     <p class="mono" style="margin-left:auto" id="stamp"></p>
